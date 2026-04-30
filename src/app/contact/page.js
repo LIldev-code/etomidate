@@ -46,7 +46,7 @@ export default function ContactPage() {
     {
       icon: <FiMail className="w-5 h-5" />,
       label: "Email Us",
-      value: siteSettings.contactEmail || "support@etomidate.com",
+      value: siteSettings.contactEmail || "orders@buyetomidateonline.com",
       desc: "We reply within 24 hours",
       color: "from-[#d4a038]/20 to-[#d4a038]/5",
     },

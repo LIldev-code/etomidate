@@ -47,7 +47,7 @@ export default function HomeClient({ products, siteSettings = {} }) {
     },
     {
       icon: <BsLightningCharge className="w-4 h-4" />,
-      text: "Powder • Vape / K-Pods • Liquid — Available in Multiple Sizes",
+      text: "Powder / Krystal • Vape / K-Pods • Liquid — Available in Multiple Sizes",
       cta: "Browse All",
       href: "/shop",
     },
@@ -507,7 +507,7 @@ export default function HomeClient({ products, siteSettings = {} }) {
 
 /* ─── Product Tabs by Category ─── */
 const categoryMeta = {
-  powder: { label: "Powder", icon: <FaFlask className="w-4 h-4" /> },
+  powder: { label: "Powder / Krystal", icon: <FaFlask className="w-4 h-4" /> },
   vape: { label: "Vape / K-Pods", icon: <FaVial className="w-4 h-4" /> },
   liquid: { label: "Liquid", icon: <FaTint className="w-4 h-4" /> },
 };

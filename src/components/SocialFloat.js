@@ -20,7 +20,7 @@ const links = [
   },
   {
     label: "Email",
-    href: "mailto:support@buyetomidateonline.com",
+    href: "mailto:orders@buyetomidateonline.com",
     icon: <FiMail className="w-5 h-5" />,
     bg: "bg-[#d4a038]",
     hover: "hover:bg-[#b8862e]",
