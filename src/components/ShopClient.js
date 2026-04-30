@@ -13,9 +13,9 @@ const productIcons = {
 };
 
 const categoryInfo = {
-  powder: { label: "Powder", icon: <FaFlask className="w-5 h-5" />, desc: "High-purity etomidate powder for research and clinical use." },
-  vape: { label: "Vape", icon: <FaVial className="w-5 h-5" />, desc: "Precision-formulated etomidate vape cartridges." },
-  liquid: { label: "Liquid", icon: <FaTint className="w-5 h-5" />, desc: "Pharmaceutical-grade etomidate liquid solutions." },
+  powder: { label: "Powder", icon: <FaFlask className="w-5 h-5" />, heading: "Etomidate Powder", desc: "High-purity etomidate powder for research and clinical use." },
+  vape: { label: "Vape / K-Pods", icon: <FaVial className="w-5 h-5" />, heading: "Etomidate Vape / K-Pods", desc: "Precision-formulated etomidate vape cartridges and K-Pod systems." },
+  liquid: { label: "Liquid", icon: <FaTint className="w-5 h-5" />, heading: "Etomidate Liquid", desc: "Pharmaceutical-grade etomidate liquid solutions." },
 };
 
 export default function ShopClient({ products }) {
@@ -138,7 +138,7 @@ export default function ShopClient({ products }) {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold text-white">
-                    Etomidate {categoryInfo[cat]?.label}
+                    {categoryInfo[cat]?.heading}
                   </h2>
                   <p className="text-sm text-gray-500">{categoryInfo[cat]?.desc}</p>
                 </div>
