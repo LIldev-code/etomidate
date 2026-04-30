@@ -47,7 +47,7 @@ export async function sendContactNotification({ name, email, subject, message })
 }
 
 export async function sendOrderNotification(order) {
-  const { orderId, productName, size, price, customerName, customerEmail, shippingAddress } = order;
+  const { orderId, productName, size, price, customerName, customerEmail, shippingAddress, message } = order;
 
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0a0a0a; color: #fff; border-radius: 12px; overflow: hidden;">
@@ -76,6 +76,11 @@ export async function sendOrderNotification(order) {
 
         <p style="color: #d4a038; font-size: 14px; font-weight: bold; margin-bottom: 5px;">Shipping Address</p>
         <p style="color: #ccc; margin-top: 0;">${shippingAddress}</p>
+
+        ${message ? `
+        <p style="color: #d4a038; font-size: 14px; font-weight: bold; margin-bottom: 5px;">Customer Message</p>
+        <p style="color: #ccc; margin-top: 0; white-space: pre-wrap;">${message}</p>
+        ` : ''}
 
         <hr style="border: none; border-top: 1px solid #262626; margin: 15px 0;" />
         <p style="color: #666; font-size: 12px; text-align: center;">This is an automated notification from BuyEtomidateOnline</p>
