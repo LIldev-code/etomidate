@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none">
+  <!-- Flask icon -->
+  <g transform="translate(4, 2)">
+    <!-- Flask body -->
+    <path d="M16 8V18L6 38C5.2 39.6 6.4 42 8.2 42H35.8C37.6 42 38.8 39.6 38 38L28 18V8" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Flask top -->
+    <path d="M12 8H32" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Liquid fill -->
+    <path d="M10 32L14 24H30L34 32C35 34 34 36 32 36H12C10 36 9 34 10 32Z" fill="#d4a038" opacity="0.25"/>
+    <!-- Bubbles -->
+    <circle cx="18" cy="30" r="2" fill="#d4a038" opacity="0.5"/>
+    <circle cx="26" cy="28" r="1.5" fill="#d4a038" opacity="0.4"/>
+    <circle cx="22" cy="33" r="1" fill="#d4a038" opacity="0.6"/>
+    <!-- Drop above flask -->
+    <path d="M22 0C22 0 18 4 18 6C18 8.2 19.8 10 22 10C24.2 10 26 8.2 26 6C26 4 22 0 22 0Z" fill="#d4a038"/>
+  </g>
+  <!-- Brand text -->
+  <text x="54" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">BuyEtomidate</text>
+  <text x="54" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#d4a038" letter-spacing="-0.02em">Online</text>
+  <text x="129" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#666666" letter-spacing="0.08em">.com</text>
+</svg>

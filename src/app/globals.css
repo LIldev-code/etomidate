@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0a0a0a;
+  --color-accent: #d4a038;
+  --color-accent-hover: #b8862e;
+  --color-surface: #0a0a0a;
+  --color-muted: #a3a3a3;
+  --gold: #d4a038;
+  --gold-light: #e8c468;
+  --gold-dark: #b8862e;
+  --dark: #0a0a0a;
+  --dark-card: #141414;
+  --dark-border: #262626;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  background: var(--color-surface);
+  color: #e5e5e5;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Banner shimmer animation */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
