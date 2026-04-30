@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/mongodb";
 import Message from "@/models/Message";
+import { sendContactNotification } from "@/lib/mailer";
 
 export async function POST(request) {
   try {
@@ -18,6 +19,9 @@ export async function POST(request) {
       subject: subject || "General Inquiry",
       message,
     });
+
+    // Send email notification (non-blocking)
+    sendContactNotification({ name, email, subject, message }).catch(() => {});
 
     return NextResponse.json({ success: true }, { status: 201 });
   } catch {
