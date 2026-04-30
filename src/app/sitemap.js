@@ -1,18 +1,24 @@
+export const dynamic = "force-dynamic";
+
 import dbConnect from "@/lib/mongodb";
 import Product from "@/models/Product";
 
 export default async function sitemap() {
   const baseUrl = "https://buyetomidateonline.com";
 
-  await dbConnect();
-  const products = await Product.find({}).lean();
-
-  const productUrls = products.map((p) => ({
-    url: `${baseUrl}/shop/${p.slug}`,
-    lastModified: p.updatedAt || new Date(),
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  let productUrls = [];
+  try {
+    await dbConnect();
+    const products = await Product.find({}).lean();
+    productUrls = products.map((p) => ({
+      url: `${baseUrl}/shop/${p.slug}`,
+      lastModified: p.updatedAt || new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
+  } catch {
+    // DB unavailable during build — skip product URLs
+  }
 
   return [
     {
