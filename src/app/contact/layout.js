@@ -9,6 +9,9 @@ export const metadata = {
     "buy etomidate inquiry",
     "etomidate bulk order",
     "etomidate shipping questions",
+    "buy K-Pods",
+    "K-Pods order",
+    "etomidate vape inquiry",
   ],
   openGraph: {
     title: "Contact BuyEtomidateOnline — Orders & Support",

@@ -5,22 +5,27 @@ import ShopClient from "@/components/ShopClient";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Shop Etomidate Products — Powder, Vape & Liquid",
+  title: "Shop Etomidate & K-Pods — Powder, Vape Cartridges & Liquid",
   description:
-    "Browse and order pharmaceutical-grade etomidate powder, K-Pods vape cartridges, and liquid solutions. All products lab-tested with ≥99.8% purity and COA certified. Multiple sizes available.",
+    "Buy etomidate powder, K-Pods vape cartridges & liquid solutions. Browse all etomidate products — lab-tested ≥99.8% purity, COA certified. Multiple quantities available with discreet shipping.",
   keywords: [
     "buy etomidate powder",
     "etomidate vape for sale",
+    "buy K-Pods",
+    "K-Pods vape cartridge",
+    "K-Pods etomidate",
+    "etomidate vape cartridge",
+    "etomidate pod",
     "etomidate liquid solution",
     "order etomidate online",
-    "K-Pods vape cartridge",
     "etomidate shop",
+    "buy etomidate vape",
     "research chemical store",
   ],
   openGraph: {
-    title: "Shop Etomidate Products — Powder, Vape & Liquid",
+    title: "Shop Etomidate & K-Pods — Powder, Vape & Liquid",
     description:
-      "Pharmaceutical-grade etomidate in powder, vape & liquid forms. Lab-tested, COA included. Order now with discreet worldwide shipping.",
+      "Buy etomidate powder, K-Pods vape cartridges & liquid online. Lab-tested, COA included. Order now with discreet worldwide shipping.",
     url: "https://buyetomidateonline.com/shop",
   },
   alternates: {

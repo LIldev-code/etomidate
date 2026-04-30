@@ -18,22 +18,28 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL("https://buyetomidateonline.com"),
   title: {
-    default: "BuyEtomidateOnline.com — Premium Etomidate Powder, Vape & Liquid",
+    default: "Buy Etomidate Online — Powder, K-Pods Vape & Liquid | BuyEtomidateOnline.com",
     template: "%s | BuyEtomidateOnline.com",
   },
   description:
-    "The most trusted source for pharmaceutical-grade etomidate. Lab-tested ≥99.8% purity powder, K-Pods vape cartridges & liquid solutions. COA with every order. Fast, discreet worldwide shipping.",
+    "Buy etomidate powder, K-Pods vape cartridges & liquid solutions online. Lab-tested ≥99.8% purity. Etomidate K-Pods, etomidate vape, etomidate powder — COA certified, discreet worldwide shipping.",
   keywords: [
     "etomidate",
     "buy etomidate",
+    "buy etomidate online",
     "etomidate online",
     "etomidate powder",
     "etomidate vape",
+    "etomidate K-Pods",
+    "K-Pods vape",
+    "K-Pods etomidate",
+    "buy K-Pods",
     "etomidate liquid",
+    "etomidate cartridge",
+    "etomidate vape cartridge",
     "research chemicals",
-    "K-Pods",
-    "pharmaceutical grade",
-    "lab tested",
+    "pharmaceutical grade etomidate",
+    "lab tested etomidate",
     "COA certified",
     "discreet shipping",
   ],
@@ -45,15 +51,15 @@ export const metadata = {
     locale: "en_US",
     url: "https://buyetomidateonline.com",
     siteName: "BuyEtomidateOnline.com",
-    title: "BuyEtomidateOnline.com — Premium Etomidate Products",
+    title: "Buy Etomidate Online — Powder, K-Pods Vape & Liquid",
     description:
-      "Pharmaceutical-grade etomidate powder, vape & liquid. ≥99.8% purity, COA included, discreet worldwide shipping within 24h.",
+      "Buy etomidate powder, K-Pods vape cartridges & liquid solutions. ≥99.8% purity, COA included, discreet worldwide shipping within 24h.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BuyEtomidateOnline.com — Premium Etomidate Products",
+    title: "Buy Etomidate & K-Pods Online — Powder, Vape & Liquid",
     description:
-      "Lab-tested etomidate powder, K-Pods vape & liquid. Ships worldwide within 24 hours.",
+      "Buy etomidate powder, K-Pods vape cartridges & liquid online. Lab-tested ≥99.8% purity. Ships worldwide within 24 hours.",
   },
   robots: {
     index: true,
