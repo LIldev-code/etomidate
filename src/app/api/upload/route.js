@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { writeFile, mkdir } from "fs/promises";
-import path from "path";
+import dbConnect from "@/lib/mongodb";
+import Image from "@/models/Image";
 import { verifyToken } from "@/lib/auth";
 import { cookies } from "next/headers";
 
@@ -32,22 +32,20 @@ export async function POST(request) {
       return NextResponse.json({ error: "File too large. Max 5MB." }, { status: 400 });
     }
 
-    // Generate unique filename
-    const ext = path.extname(file.name) || ".jpg";
-    const filename = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}${ext}`;
-
-    // Ensure upload directory exists
-    const uploadDir = path.join(process.cwd(), "public", "uploads");
-    await mkdir(uploadDir, { recursive: true });
-
-    // Write file
+    // Convert to base64 and store in MongoDB
+    await dbConnect();
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
-    const filePath = path.join(uploadDir, filename);
-    await writeFile(filePath, buffer);
+    const base64 = buffer.toString("base64");
 
-    // Return the public URL
-    const url = `/uploads/${filename}`;
+    const image = await Image.create({
+      filename: file.name,
+      contentType: file.type,
+      data: base64,
+    });
+
+    // Return the API URL that serves the image
+    const url = `/api/images/${image._id}`;
     return NextResponse.json({ success: true, url });
   } catch (err) {
     console.error("Upload error:", err);

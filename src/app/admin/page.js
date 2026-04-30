@@ -528,7 +528,15 @@ function ProductsTab({ products, onRefresh }) {
               </div>
             ) : (
               <div className="flex flex-col sm:flex-row sm:items-center justify-between p-5 gap-4">
-                <div className="min-w-0">
+                <div className="flex items-center gap-4 min-w-0">
+                  {product.image ? (
+                    <img src={product.image} alt={product.name} className="w-12 h-12 rounded-lg object-cover border border-[#262626] shrink-0" />
+                  ) : (
+                    <div className="w-12 h-12 rounded-lg bg-[#1a1a1a] border border-[#262626] flex items-center justify-center shrink-0">
+                      <span className="text-[10px] text-gray-600 uppercase">{product.category?.slice(0, 3)}</span>
+                    </div>
+                  )}
+                  <div className="min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="text-sm font-semibold text-white">{product.name}</h3>
                     <span className="text-[10px] uppercase tracking-wider text-gray-600 bg-[#1a1a1a] px-2 py-0.5 rounded">{product.category}</span>
@@ -543,7 +551,8 @@ function ProductsTab({ products, onRefresh }) {
                     )}
                   </div>
                   <p className="text-xs text-gray-500 truncate">{product.shortDescription}</p>
-                  <p className="text-sm font-bold text-[#d4a038] mt-1">From ${product.price?.toFixed(2)}</p>
+                  <p className="text-sm font-bold text-[#d4a038] mt-1">From €{product.price?.toFixed(2)}</p>
+                </div>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   <button onClick={() => startEdit(product)} className="flex items-center gap-1.5 bg-[#1a1a1a] hover:bg-[#262626] text-gray-300 text-xs font-medium px-3 py-2 rounded-lg transition-colors">
