@@ -80,7 +80,9 @@ export const metadata = {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
   },
-  verification: {},
+  verification: {
+    google: "6uz5n6ngf_ozH4xgFtl0Clt_Tm2OBYScFmgYVpqS5gk",
+  },
 };
 
 export default function RootLayout({ children }) {
