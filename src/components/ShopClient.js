@@ -84,7 +84,7 @@ export default function ShopClient({ products }) {
             All <span className="text-[#d4a038]">Products</span>
           </h1>
           <p className="hero-anim text-gray-400 max-w-xl text-lg mb-8">
-            Lab-tested, COA-certified etomidate in three forms. Each product ships within 24 hours with discreet packaging.
+            Lab-tested, COA-certified etomidate in three forms. Each product ships within 48h with discreet packaging.
           </p>
 
           {/* Filter pills */}

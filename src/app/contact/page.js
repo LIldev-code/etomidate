@@ -47,13 +47,13 @@ export default function ContactPage() {
       icon: <FiMail className="w-5 h-5" />,
       label: "Email Us",
       value: siteSettings.contactEmail || "orders@buyetomidateonline.com",
-      desc: "We reply within 24 hours",
+      desc: "We reply within 48 hours",
       color: "from-[#d4a038]/20 to-[#d4a038]/5",
     },
     {
       icon: <FiPhone className="w-5 h-5" />,
       label: "Call Us",
-      value: siteSettings.contactPhone || "+49 XXX XXX XXXX",
+      value: siteSettings.contactPhone || "+1 985 291 3802",
       desc: "Mon–Sun, 9AM – 9PM",
       color: "from-blue-500/20 to-blue-500/5",
     },
@@ -61,7 +61,7 @@ export default function ContactPage() {
       icon: <FiTruck className="w-5 h-5" />,
       label: "Shipping Info",
       value: siteSettings.shippingNote || "Discreet worldwide shipping",
-      desc: "Orders ship within 24h",
+      desc: "Orders ship within 48h",
       color: "from-green-500/20 to-green-500/5",
     },
     {
@@ -154,7 +154,7 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
                   <p className="text-gray-400 mb-6 max-w-sm mx-auto">
-                    Thank you for reaching out. Our team will get back to you within 24 hours.
+                    Thank you for reaching out. Our team will get back to you within 48 hours.
                   </p>
                   <button
                     onClick={() => setSent(false)}
@@ -285,7 +285,7 @@ export default function ContactPage() {
               <h3 className="text-lg font-bold text-white mb-5">Common Questions</h3>
               <div className="space-y-4">
                 {[
-                  { q: "How long does shipping take?", a: "Orders are processed within 24 hours. Standard delivery takes 3–7 business days within Europe." },
+                  { q: "How long does shipping take?", a: "Orders are processed within 48h. Standard delivery takes 3–7 business days within Europe." },
                   { q: "Do you offer bulk pricing?", a: "Yes! Contact us with your requirements and we'll provide a custom quote for large orders." },
                   { q: "Is shipping discreet?", a: "Absolutely. All packages are shipped in plain, unmarked packaging with no product references." },
                   { q: "What payment methods do you accept?", a: "We accept bank transfer, cryptocurrency, and other methods. Details are provided after order confirmation." },

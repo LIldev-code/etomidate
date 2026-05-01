@@ -35,7 +35,7 @@ export default function HomeClient({ products, siteSettings = {} }) {
     },
     {
       icon: <HiOutlineTruck className="w-4 h-4" />,
-      text: "Discreet Tracked Shipping Worldwide — Orders Ship Within 24h",
+      text: "Discreet Tracked Shipping Worldwide — Orders Ship Within 48h",
       cta: "Learn More",
       href: "/about",
     },
@@ -302,7 +302,7 @@ export default function HomeClient({ products, siteSettings = {} }) {
             {[
               { icon: <HiOutlineBeaker className="w-8 h-8 text-[#d4a038]" />, title: "Lab Tested", sub: "99.8%+ purity verified" },
               { icon: <HiOutlineTruck className="w-8 h-8 text-[#d4a038]" />, title: "Discreet Shipping", sub: "Tracked & sealed packaging" },
-              { icon: <HiOutlineLightningBolt className="w-8 h-8 text-[#d4a038]" />, title: "Fast Dispatch", sub: "Ships within 24 hours" },
+              { icon: <HiOutlineLightningBolt className="w-8 h-8 text-[#d4a038]" />, title: "Fast Dispatch", sub: "Ships within 48h" },
               { icon: <HiOutlineGlobe className="w-8 h-8 text-[#d4a038]" />, title: "Worldwide Delivery", sub: "International shipping available" },
             ].map((b, i) => (
               <motion.div

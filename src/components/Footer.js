@@ -68,11 +68,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <FiPhone className="w-4 h-4 text-[#d4a038] shrink-0" />
-                +1 (555) 902-4481
+                +1 985 291 3802
               </li>
               <li className="flex items-start gap-2.5 pt-2 text-xs">
                 <FiTruck className="w-4 h-4 text-[#d4a038] shrink-0 mt-0.5" />
-                All orders shipped within 24h via tracked, discreet packaging.
+                All orders shipped within 48h via tracked, discreet packaging.
               </li>
             </ul>
           </div>
