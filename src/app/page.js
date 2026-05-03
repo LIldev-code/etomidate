@@ -35,8 +35,8 @@ export const metadata = {
     title: "Buy Etomidate & K-Pods Online — Powder, Vape & Liquid",
     description:
       "Buy etomidate powder, K-Pods vape cartridges & liquid online. ≥99.8% purity, lab-tested with COA. Fast discreet shipping worldwide.",
-    url: "https://buyetomidateproducts.com",
-    siteName: "BuyEtomidateProducts.com",
+    url: "https://buyetomidateonline.com",
+    siteName: "BuyEtomidateOnline.com",
     type: "website",
   },
   twitter: {
@@ -46,7 +46,7 @@ export const metadata = {
       "Pharmaceutical-grade etomidate. ≥99.8% purity, lab-tested, COA included. Ships worldwide within 24 hours.",
   },
   alternates: {
-    canonical: "https://buyetomidateproducts.com",
+    canonical: "https://buyetomidateonline.com",
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ export default async function Home() {
   const siteSettings = {
     announcement: raw?.announcement || "",
     heroSubtitle: raw?.heroSubtitle || "",
-    siteName: raw?.siteName || "BuyEtomidateProducts",
+    siteName: raw?.siteName || "BuyEtomidateOnline",
     tagline: raw?.tagline || "",
   };
 

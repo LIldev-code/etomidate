@@ -2,13 +2,13 @@
 
 :root {
   --color-primary: #0a0a0a;
-  --color-accent: #10b981;
-  --color-accent-hover: #059669;
+  --color-accent: #d4a038;
+  --color-accent-hover: #b8862e;
   --color-surface: #0a0a0a;
   --color-muted: #a3a3a3;
-  --gold: #10b981;
-  --gold-light: #34d399;
-  --gold-dark: #059669;
+  --gold: #d4a038;
+  --gold-light: #e8c468;
+  --gold-dark: #b8862e;
   --dark: #0a0a0a;
   --dark-card: #141414;
   --dark-border: #262626;
@@ -29,89 +29,4 @@ html {
 @keyframes shimmer {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
-}
-
-/* Image Protection Styles */
-img {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  -webkit-user-drag: none !important;
-  -khtml-user-drag: none !important;
-  pointer-events: none !important;
-}
-
-/* Allow pointer events for specific interactive images */
-img.interactive {
-  pointer-events: auto !important;
-}
-
-/* Prevent text selection on image containers */
-.image-container,
-.product-card,
-.carousel-image,
-.bg-cover {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  -webkit-touch-callout: none !important;
-  -webkit-tap-highlight-color: transparent !important;
-}
-
-/* Disable right-click context menu */
-.no-context-menu {
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  -khtml-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-}
-
-/* Prevent drag and drop */
-[draggable="false"] {
-  -webkit-user-drag: none !important;
-  -khtml-user-drag: none !important;
-}
-
-/* Disable print styles to prevent printing images */
-@media print {
-  img {
-    display: none !important;
-  }
-  
-  .no-print {
-    display: none !important;
-  }
-}
-
-/* Prevent screenshot attempts (basic deterrent) */
-@keyframes anti-screenshot {
-  0% { opacity: 1; }
-  50% { opacity: 0.99; }
-  100% { opacity: 1; }
-}
-
-.anti-screenshot {
-  animation: anti-screenshot 0.1s infinite;
-}
-
-/* Hide cursor on images to discourage interaction */
-img:hover {
-  cursor: default !important;
-}
-
-/* Prevent selection on product images */
-.product-image img,
-.carousel-image img,
-.gallery-image img {
-  -webkit-user-drag: none !important;
-  -khtml-user-drag: none !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  pointer-events: none !important;
 }

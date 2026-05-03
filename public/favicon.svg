@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
   <rect width="48" height="48" rx="10" fill="#0a0a0a"/>
   <!-- Flask -->
-  <path d="M18 12V20L10 36C9.2 37.6 10.4 40 12.2 40H35.8C37.6 40 38.8 37.6 38 36L30 20V12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M15 12H33" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M18 12V20L10 36C9.2 37.6 10.4 40 12.2 40H35.8C37.6 40 38.8 37.6 38 36L30 20V12" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 12H33" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round"/>
   <!-- Liquid -->
-  <path d="M14 30L17 24H31L34 30C35 32 34 34 32 34H16C14 34 13 32 14 30Z" fill="#10b981" opacity="0.3"/>
+  <path d="M14 30L17 24H31L34 30C35 32 34 34 32 34H16C14 34 13 32 14 30Z" fill="#d4a038" opacity="0.3"/>
   <!-- Drop -->
-  <path d="M24 4C24 4 20 8 20 10C20 12.2 21.8 14 24 14C26.2 14 28 12.2 28 10C28 8 24 4 24 4Z" fill="#10b981"/>
+  <path d="M24 4C24 4 20 8 20 10C20 12.2 21.8 14 24 14C26.2 14 28 12.2 28 10C28 8 24 4 24 4Z" fill="#d4a038"/>
 </svg>

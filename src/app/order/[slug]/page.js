@@ -8,9 +8,9 @@ import { FaFlask, FaVial, FaTint } from "react-icons/fa";
 import { FiCheckCircle, FiUser, FiMail, FiMapPin, FiMessageSquare, FiShoppingBag, FiChevronRight, FiLoader, FiArrowLeft } from "react-icons/fi";
 
 const categoryIcons = {
-  powder: <FaFlask className="w-10 h-10 text-[#10b981]" />,
-  vape: <FaVial className="w-10 h-10 text-[#10b981]" />,
-  liquid: <FaTint className="w-10 h-10 text-[#10b981]" />,
+  powder: <FaFlask className="w-10 h-10 text-[#d4a038]" />,
+  vape: <FaVial className="w-10 h-10 text-[#d4a038]" />,
+  liquid: <FaTint className="w-10 h-10 text-[#d4a038]" />,
 };
 
 export default function OrderPage() {
@@ -43,7 +43,7 @@ export default function OrderPage() {
   if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-24 text-center">
-        <FiLoader className="w-8 h-8 text-[#10b981] animate-spin mx-auto mb-3" />
+        <FiLoader className="w-8 h-8 text-[#d4a038] animate-spin mx-auto mb-3" />
         <p className="text-gray-500">Loading...</p>
       </div>
     );
@@ -53,7 +53,7 @@ export default function OrderPage() {
     return (
       <div className="max-w-7xl mx-auto px-4 py-24 text-center">
         <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-        <Link href="/shop" className="text-[#10b981] hover:underline">Back to Shop</Link>
+        <Link href="/shop" className="text-[#d4a038] hover:underline">Back to Shop</Link>
       </div>
     );
   }
@@ -98,9 +98,9 @@ export default function OrderPage() {
         animate={{ opacity: 1, scale: 1 }}
         className="max-w-2xl mx-auto px-4 py-24 text-center"
       >
-        <div className="bg-[#141414] border border-[#10b981]/30 rounded-2xl p-10">
-          <FiCheckCircle className="w-14 h-14 text-[#10b981] mx-auto mb-4" />
-          <h1 className="text-2xl font-bold text-[#10b981] mb-2">Order Placed Successfully!</h1>
+        <div className="bg-[#141414] border border-[#d4a038]/30 rounded-2xl p-10">
+          <FiCheckCircle className="w-14 h-14 text-[#d4a038] mx-auto mb-4" />
+          <h1 className="text-2xl font-bold text-[#d4a038] mb-2">Order Placed Successfully!</h1>
           <p className="text-gray-300 mb-6">
             Thank you, {form.name}. We&apos;ve received your order for{" "}
             <strong>{product.name} ({product.sizes?.[selectedSize]?.label || "Standard"})</strong>.
@@ -109,7 +109,7 @@ export default function OrderPage() {
           <div className="flex justify-center gap-3">
             <Link
               href="/shop"
-              className="inline-flex items-center gap-2 bg-[#10b981] hover:bg-[#059669] text-black font-semibold px-6 py-3 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#d4a038] hover:bg-[#b8862e] text-black font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               <FiShoppingBag className="w-4 h-4" />
               Continue Shopping
@@ -125,17 +125,17 @@ export default function OrderPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-1.5 text-sm text-gray-500 mb-8">
-          <Link href="/" className="hover:text-[#10b981] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#d4a038] transition-colors">Home</Link>
           <FiChevronRight className="w-3 h-3" />
-          <Link href="/shop" className="hover:text-[#10b981] transition-colors">Shop</Link>
+          <Link href="/shop" className="hover:text-[#d4a038] transition-colors">Shop</Link>
           <FiChevronRight className="w-3 h-3" />
-          <Link href={`/shop/${product.slug}`} className="hover:text-[#10b981] transition-colors">{product.name}</Link>
+          <Link href={`/shop/${product.slug}`} className="hover:text-[#d4a038] transition-colors">{product.name}</Link>
           <FiChevronRight className="w-3 h-3" />
-          <span className="text-[#10b981] font-medium">Order</span>
+          <span className="text-[#d4a038] font-medium">Order</span>
         </nav>
 
         {/* Back link */}
-        <Link href={`/shop/${product.slug}`} className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-[#10b981] transition-colors mb-6">
+        <Link href={`/shop/${product.slug}`} className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-[#d4a038] transition-colors mb-6">
           <FiArrowLeft className="w-3.5 h-3.5" />
           Back to product details
         </Link>
@@ -169,7 +169,7 @@ export default function OrderPage() {
               </div>
               <div className="text-right">
                 <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold mb-1">Price</p>
-                <p className="text-2xl font-bold text-[#10b981]">€{currentPrice.toFixed(2)}</p>
+                <p className="text-2xl font-bold text-[#d4a038]">€{currentPrice.toFixed(2)}</p>
               </div>
             </div>
           </div>
@@ -187,12 +187,12 @@ export default function OrderPage() {
                     onClick={() => setSelectedSize(i)}
                     className={`px-4 py-3.5 rounded-xl border text-sm font-medium transition-all text-center ${
                       selectedSize === i
-                        ? "bg-[#10b981] text-black border-[#10b981] shadow-md shadow-[#10b981]/20"
-                        : "bg-[#141414] text-gray-300 border-[#262626] hover:border-[#10b981]/50"
+                        ? "bg-[#d4a038] text-black border-[#d4a038] shadow-md shadow-[#d4a038]/20"
+                        : "bg-[#141414] text-gray-300 border-[#262626] hover:border-[#d4a038]/50"
                     }`}
                   >
                     <span className="block text-base font-bold">{size.label}</span>
-                    <span className={`text-sm ${selectedSize === i ? "text-black/70" : "text-[#10b981]"}`}>€{size.price.toFixed(2)}</span>
+                    <span className={`text-sm ${selectedSize === i ? "text-black/70" : "text-[#d4a038]"}`}>€{size.price.toFixed(2)}</span>
                   </button>
                 ))}
               </div>
@@ -202,7 +202,7 @@ export default function OrderPage() {
           {/* Order Form */}
           <form onSubmit={handleOrder} className="bg-[#141414] rounded-2xl p-6 border border-[#262626]">
             <h3 className="flex items-center gap-2 text-lg font-bold text-white mb-6">
-              <FiShoppingBag className="w-5 h-5 text-[#10b981]" />
+              <FiShoppingBag className="w-5 h-5 text-[#d4a038]" />
               Your Details
             </h3>
 
@@ -217,7 +217,7 @@ export default function OrderPage() {
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981] focus:border-transparent placeholder:text-gray-600"
+                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a038] focus:border-transparent placeholder:text-gray-600"
                   />
                 </div>
               </div>
@@ -232,7 +232,7 @@ export default function OrderPage() {
                     required
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981] focus:border-transparent placeholder:text-gray-600"
+                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a038] focus:border-transparent placeholder:text-gray-600"
                   />
                 </div>
               </div>
@@ -247,7 +247,7 @@ export default function OrderPage() {
                     required
                     value={form.address}
                     onChange={(e) => setForm({ ...form, address: e.target.value })}
-                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981] focus:border-transparent placeholder:text-gray-600"
+                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a038] focus:border-transparent placeholder:text-gray-600"
                   />
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function OrderPage() {
                     rows={4}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#059669] focus:border-transparent placeholder:text-gray-600 resize-none"
+                    className="w-full bg-[#0d0d0d] border border-[#262626] text-white rounded-xl pl-10 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a038] focus:border-transparent placeholder:text-gray-600 resize-none"
                   />
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function OrderPage() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full flex items-center justify-center gap-2 bg-[#10b981] hover:bg-[#059669] disabled:bg-[#059669]/50 text-black font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-[#10b981]/25 mt-6 text-base"
+              className="w-full flex items-center justify-center gap-2 bg-[#d4a038] hover:bg-[#b8862e] disabled:bg-[#b8862e]/50 text-black font-bold py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-[#d4a038]/25 mt-6 text-base"
             >
               {submitting ? (
                 <FiLoader className="w-5 h-5 animate-spin" />
