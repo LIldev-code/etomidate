@@ -13,7 +13,7 @@ const links = [
   },
   {
     label: "Telegram",
-    href: "https://t.me/yourusername",
+    href: "https://t.me/cannachem",
     icon: <FaTelegramPlane className="w-5 h-5" />,
     bg: "bg-[#0088cc]",
     hover: "hover:bg-[#0077b5]",
