@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ToastProvider from "@/components/ToastProvider";
 import SocialFloat from "@/components/SocialFloat";
+import ImageProtection from "@/components/ImageProtection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,10 +18,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://buyetomidateonline.com"),
+  metadataBase: new URL("https://buyetomidateproducts.com"),
   title: {
-    default: "Buy Etomidate Online — Powder, K-Pods Vape & Liquid | BuyEtomidateOnline.com",
-    template: "%s | BuyEtomidateOnline.com",
+    default: "Buy Etomidate Products — Powder, K-Pods Vape & Liquid | BuyEtomidateProducts.com",
+    template: "%s | BuyEtomidateProducts.com",
   },
   description:
     "Buy etomidate powder, K-Pods vape cartridges & liquid solutions online. Lab-tested ≥99.8% purity. Etomidate K-Pods, etomidate vape, etomidate powder — COA certified, discreet worldwide shipping.",
@@ -44,15 +45,15 @@ export const metadata = {
     "COA certified",
     "discreet shipping",
   ],
-  authors: [{ name: "BuyEtomidateOnline.com" }],
-  creator: "BuyEtomidateOnline.com",
-  publisher: "BuyEtomidateOnline.com",
+  authors: [{ name: "BuyEtomidateProducts.com" }],
+  creator: "BuyEtomidateProducts.com",
+  publisher: "BuyEtomidateProducts.com",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://buyetomidateonline.com",
-    siteName: "BuyEtomidateOnline.com",
-    title: "Buy Etomidate Online — Powder, K-Pods Vape & Liquid",
+    url: "https://buyetomidateproducts.com",
+    siteName: "BuyEtomidateProducts.com",
+    title: "Buy Etomidate Products — Powder, K-Pods Vape & Liquid",
     description:
       "Buy etomidate powder, K-Pods vape cartridges & liquid solutions. ≥99.8% purity, COA included, discreet worldwide shipping within 24h.",
   },
@@ -74,7 +75,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://buyetomidateonline.com",
+    canonical: "https://buyetomidateproducts.com",
   },
   icons: {
     icon: "/favicon.svg",
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <ImageProtection />
         <ToastProvider />
         <Navbar />
         <main className="flex-1">{children}</main>

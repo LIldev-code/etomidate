@@ -7,9 +7,9 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "About Us — Quality Standards & Our Mission",
   description:
-    "BuyEtomidateOnline.com has been a trusted name in pharmaceutical-grade etomidate since 2019. Learn about our GMP-certified lab sourcing, rigorous quality testing, and commitment to ≥99.8% purity with every product.",
+    "BuyEtomidateProducts.com has been a trusted name in pharmaceutical-grade etomidate since 2019. Learn about our GMP-certified lab sourcing, rigorous quality testing, and commitment to ≥99.8% purity with every product.",
   keywords: [
-    "about BuyEtomidateOnline",
+    "about BuyEtomidateProducts",
     "etomidate quality standards",
     "GMP certified etomidate",
     "etomidate supplier history",
@@ -17,13 +17,13 @@ export const metadata = {
     "pharmaceutical grade research chemicals",
   ],
   openGraph: {
-    title: "About BuyEtomidateOnline — Quality & Trust Since 2019",
+    title: "About BuyEtomidateProducts — Quality & Trust Since 2019",
     description:
-      "GMP-certified lab sourcing, ≥99.8% purity, COA with every order. Learn why researchers worldwide trust BuyEtomidateOnline.com.",
-    url: "https://buyetomidateonline.com/about",
+      "GMP-certified lab sourcing, ≥99.8% purity, COA with every order. Learn why researchers worldwide trust BuyEtomidateProducts.com.",
+    url: "https://buyetomidateproducts.com/about",
   },
   alternates: {
-    canonical: "https://buyetomidateonline.com/about",
+    canonical: "https://buyetomidateproducts.com/about",
   },
 };
 

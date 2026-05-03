@@ -15,24 +15,24 @@ const fadeUp = {
 
 const sections = [
   {
-    icon: <FiTarget className="w-6 h-6 text-[#d4a038]" />,
-    title: "Our Mission",
-    text: "We exist to make high-purity etomidate accessible to qualified researchers, compounding pharmacies, and licensed practitioners around the world. By maintaining direct relationships with GMP-certified manufacturers, we eliminate unnecessary middlemen and pass the savings on to our customers — without ever cutting corners on quality.",
+    icon: <FiTarget className="w-6 h-6 text-[#10b981]" />,
+    title: "Our Purpose",
+    text: "We are dedicated to providing premium quality products to researchers and professionals worldwide. Through direct partnerships with certified manufacturers, we ensure consistent quality while maintaining competitive pricing. Our focus is on reliability, discretion, and exceptional service.",
   },
   {
-    icon: <HiOutlineShieldCheck className="w-6 h-6 text-[#d4a038]" />,
-    title: "Quality Assurance",
-    text: "Every product we sell is subjected to rigorous third-party testing. Our etomidate powder is verified at ≥99.8% purity via HPLC analysis. K-Pods and liquid solutions undergo additional stability and consistency testing. A Certificate of Analysis (COA) is included with every shipment, so you always know exactly what you're receiving.",
+    icon: <HiOutlineShieldCheck className="w-6 h-6 text-[#10b981]" />,
+    title: "Quality Standards",
+    text: "All our products undergo comprehensive testing procedures. We verify purity levels through laboratory analysis and ensure consistent quality across all formulations. Each shipment includes detailed documentation so you can be confident in the products you receive.",
   },
   {
-    icon: <BsBoxSeam className="w-6 h-6 text-[#d4a038]" />,
-    title: "Shipping & Privacy",
-    text: "We understand the importance of discretion. All orders are double-sealed in plain, unmarked packaging with no external indication of contents. We ship via tracked courier services and provide real-time tracking updates. International orders are processed with full customs documentation to ensure smooth delivery.",
+    icon: <BsBoxSeam className="w-6 h-6 text-[#10b981]" />,
+    title: "Discreet Delivery",
+    text: "Privacy is our priority. All orders are packaged in plain, unmarked materials with no external indicators. We provide tracking information for all shipments and handle international deliveries with proper documentation to ensure smooth customs clearance.",
   },
   {
-    icon: <BsPeople className="w-6 h-6 text-[#d4a038]" />,
-    title: "Our Team",
-    text: "BuyEtomidateOnline was founded by a team of analytical chemists and pharmaceutical logistics professionals with over 15 years of combined experience in the research chemical sector. We are passionate about product integrity and customer service. Our support team is available 7 days a week to assist with orders, product questions, and shipping inquiries.",
+    icon: <BsPeople className="w-6 h-6 text-[#10b981]" />,
+    title: "Professional Team",
+    text: "Our company is operated by experienced professionals with extensive knowledge in pharmaceutical logistics and quality control. We are committed to maintaining high standards of service and are available to assist with any questions or concerns you may have.",
   },
 ];
 
@@ -45,16 +45,16 @@ export default function AboutClient({ aboutText }) {
         transition={{ duration: 0.5 }}
       >
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 bg-[#d4a038]/10 rounded-xl flex items-center justify-center">
-            <HiOutlineBeaker className="w-6 h-6 text-[#d4a038]" />
+          <div className="w-12 h-12 bg-[#10b981]/10 rounded-xl flex items-center justify-center">
+            <HiOutlineBeaker className="w-6 h-6 text-[#10b981]" />
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-white">
-            About <span className="text-[#d4a038]">BuyEtomidateOnline</span>
+            About <span className="text-[#10b981]">BuyEtomidateProducts</span>
           </h1>
         </div>
 
         {aboutText && (
-          <p className="text-gray-400 text-lg leading-relaxed mb-10 border-l-4 border-[#d4a038] pl-5">
+          <p className="text-gray-400 text-lg leading-relaxed mb-10 border-l-4 border-[#10b981] pl-5">
             {aboutText}
           </p>
         )}
@@ -69,10 +69,10 @@ export default function AboutClient({ aboutText }) {
             whileInView="visible"
             viewport={{ once: true }}
             custom={i}
-            className="bg-[#141414] border border-[#262626] rounded-2xl p-6 md:p-8 hover:border-[#d4a038]/30 transition-colors"
+            className="bg-[#141414] border border-[#262626] rounded-2xl p-6 md:p-8 hover:border-[#10b981]/30 transition-colors"
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-[#d4a038]/10 rounded-lg flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-[#10b981]/10 rounded-lg flex items-center justify-center shrink-0">
                 {section.icon}
               </div>
               <h2 className="text-xl font-bold text-white">{section.title}</h2>
