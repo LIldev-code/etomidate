@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Admin Dashboard — BuyEtomidateOnline",
+  title: "Admin Dashboard — BuyEtomidateProducts",
 };
 
 export default function AdminLayout({ children }) {

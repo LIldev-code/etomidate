@@ -5,9 +5,9 @@ import { FiArrowRight, FiCheckCircle, FiXCircle, FiStar } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const categoryIcons = {
-  powder: <FaFlask className="w-12 h-12 text-[#d4a038]" />,
-  vape: <FaVial className="w-12 h-12 text-[#d4a038]" />,
-  liquid: <FaTint className="w-12 h-12 text-[#d4a038]" />,
+  powder: <FaFlask className="w-12 h-12 text-[#10b981]" />,
+  vape: <FaVial className="w-12 h-12 text-[#10b981]" />,
+  liquid: <FaTint className="w-12 h-12 text-[#10b981]" />,
 };
 
 export default function ProductCard({ product }) {
@@ -18,7 +18,7 @@ export default function ProductCard({ product }) {
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
       whileHover={{ y: -4 }}
-      className="bg-[#141414] rounded-2xl border border-[#262626] overflow-hidden hover:border-[#d4a038]/40 transition-all group"
+      className="bg-[#141414] rounded-2xl border border-[#262626] overflow-hidden hover:border-[#10b981]/40 transition-all group"
     >
       {/* Product image */}
       <div className="h-56 bg-gradient-to-br from-[#1a1a1a] to-[#111] flex items-center justify-center relative overflow-hidden">
@@ -42,12 +42,12 @@ export default function ProductCard({ product }) {
 
       <div className="p-6">
         <div className="flex items-center justify-between mb-1">
-          <h3 className="text-lg font-bold text-white group-hover:text-[#d4a038] transition-colors">
+          <h3 className="text-lg font-bold text-white group-hover:text-[#10b981] transition-colors">
             {product.name}
           </h3>
           <div className="flex items-center gap-0.5">
             {[1,2,3,4,5].map((s) => (
-              <FiStar key={s} className="w-3.5 h-3.5 text-[#d4a038] fill-[#d4a038]" />
+              <FiStar key={s} className="w-3.5 h-3.5 text-[#10b981] fill-[#10b981]" />
             ))}
           </div>
         </div>
@@ -56,12 +56,12 @@ export default function ProductCard({ product }) {
         </p>
 
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xl font-bold text-[#d4a038]">
+          <span className="text-xl font-bold text-[#10b981]">
             €{product.price.toFixed(2)}
           </span>
           <Link
             href={`/shop/${product.slug}`}
-            className="flex items-center gap-1.5 bg-[#d4a038] hover:bg-[#b8862e] text-black text-sm font-semibold px-4 py-2 rounded-lg transition-all hover:shadow-md hover:shadow-[#d4a038]/20 group/btn"
+            className="flex items-center gap-1.5 bg-[#10b981] hover:bg-[#059669] text-black text-sm font-semibold px-4 py-2 rounded-lg transition-all hover:shadow-md hover:shadow-[#10b981]/20 group/btn"
           >
             View Details
             <FiArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />

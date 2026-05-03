@@ -4,7 +4,7 @@ import dbConnect from "@/lib/mongodb";
 import Product from "@/models/Product";
 
 export default async function sitemap() {
-  const baseUrl = "https://buyetomidateonline.com";
+  const baseUrl = "https://buyetomidateproducts.com";
 
   let productUrls = [];
   try {

@@ -1,21 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none">
-  <!-- Flask icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <!-- Modern hexagon crystal icon -->
   <g transform="translate(4, 2)">
-    <!-- Flask body -->
-    <path d="M16 8V18L6 38C5.2 39.6 6.4 42 8.2 42H35.8C37.6 42 38.8 39.6 38 38L28 18V8" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Flask top -->
-    <path d="M12 8H32" stroke="#d4a038" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Liquid fill -->
-    <path d="M10 32L14 24H30L34 32C35 34 34 36 32 36H12C10 36 9 34 10 32Z" fill="#d4a038" opacity="0.25"/>
-    <!-- Bubbles -->
-    <circle cx="18" cy="30" r="2" fill="#d4a038" opacity="0.5"/>
-    <circle cx="26" cy="28" r="1.5" fill="#d4a038" opacity="0.4"/>
-    <circle cx="22" cy="33" r="1" fill="#d4a038" opacity="0.6"/>
-    <!-- Drop above flask -->
-    <path d="M22 0C22 0 18 4 18 6C18 8.2 19.8 10 22 10C24.2 10 26 8.2 26 6C26 4 22 0 22 0Z" fill="#d4a038"/>
+    <!-- Outer hexagon -->
+    <path d="M22 4L12 10L12 26L22 32L32 26L32 10Z" stroke="#10b981" stroke-width="2.5" fill="none"/>
+    
+    <!-- Inner hexagon -->
+    <path d="M22 8L16 12L16 24L22 28L28 24L28 12Z" fill="#10b981" opacity="0.3"/>
+    
+    <!-- Center crystal -->
+    <path d="M22 14L19 16L19 20L22 22L25 20L25 16Z" fill="#10b981" opacity="0.8"/>
+    
+    <!-- Light reflections -->
+    <path d="M20 12L22 10L24 12L23 14L21 14Z" fill="#34d399" opacity="0.6"/>
+    <path d="M24 18L26 16L28 18L27 20L25 20Z" fill="#34d399" opacity="0.4"/>
+    
+    <!-- Sparkle points -->
+    <circle cx="18" cy="16" r="1" fill="#ffffff" opacity="0.9"/>
+    <circle cx="26" cy="18" r="0.8" fill="#ffffff" opacity="0.7"/>
+    <circle cx="22" cy="20" r="0.6" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Corner accents -->
+    <path d="M12 10L14 8L16 10L14 12Z" fill="#10b981" opacity="0.5"/>
+    <path d="M28 10L30 8L32 10L30 12Z" fill="#10b981" opacity="0.5"/>
+    <path d="M12 26L14 28L16 26L14 24Z" fill="#10b981" opacity="0.5"/>
+    <path d="M28 26L30 28L32 26L30 24Z" fill="#10b981" opacity="0.5"/>
   </g>
+  
   <!-- Brand text -->
   <text x="54" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">BuyEtomidate</text>
-  <text x="54" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#d4a038" letter-spacing="-0.02em">Online</text>
-  <text x="129" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#666666" letter-spacing="0.08em">.com</text>
+  <text x="54" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#10b981" letter-spacing="-0.02em">Products</text>
+  <text x="157" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#666666" letter-spacing="0.08em">.com</text>
 </svg>

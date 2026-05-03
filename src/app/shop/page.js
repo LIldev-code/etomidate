@@ -26,10 +26,10 @@ export const metadata = {
     title: "Shop Etomidate & K-Pods — Powder, Vape & Liquid",
     description:
       "Buy etomidate powder, K-Pods vape cartridges & liquid online. Lab-tested, COA included. Order now with discreet worldwide shipping.",
-    url: "https://buyetomidateonline.com/shop",
+    url: "https://buyetomidateproducts.com/shop",
   },
   alternates: {
-    canonical: "https://buyetomidateonline.com/shop",
+    canonical: "https://buyetomidateproducts.com/shop",
   },
 };
 
