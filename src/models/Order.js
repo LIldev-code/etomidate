@@ -8,7 +8,8 @@ const OrderSchema = new mongoose.Schema(
     size: { type: String, required: true },
     price: { type: Number, required: true },
     customerName: { type: String, required: true },
-    customerEmail: { type: String, required: true },
+    contactMethod: { type: String, enum: ["whatsapp", "telegram"], required: true },
+    customerContact: { type: String, required: true },
     shippingAddress: { type: String, required: true },
     message: { type: String, default: "" },
     status: {

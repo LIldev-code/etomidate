@@ -284,8 +284,10 @@ function OrdersTab({ orders, onRefresh }) {
                   <p className="text-gray-300">{order.customerName}</p>
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase tracking-wider text-gray-600 mb-0.5">Email</p>
-                  <p className="text-gray-300">{order.customerEmail}</p>
+                  <p className="text-[10px] uppercase tracking-wider text-gray-600 mb-0.5">
+                    {order.contactMethod === "telegram" ? "Telegram" : "WhatsApp"}
+                  </p>
+                  <p className="text-gray-300">{order.customerContact || order.customerEmail}</p>
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-wider text-gray-600 mb-0.5">Address</p>

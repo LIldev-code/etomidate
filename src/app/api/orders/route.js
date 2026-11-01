@@ -10,10 +10,14 @@ export async function POST(request) {
   try {
     await dbConnect();
     const body = await request.json();
-    const { productId, productName, size, price, customerName, customerEmail, shippingAddress, message } = body;
+    const { productId, productName, size, price, customerName, contactMethod, customerContact, shippingAddress, message } = body;
 
-    if (!productId || !customerName || !customerEmail || !shippingAddress) {
+    if (!productId || !customerName || !contactMethod || !customerContact || !shippingAddress) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    if (!["whatsapp", "telegram"].includes(contactMethod)) {
+      return NextResponse.json({ error: "Invalid contact method" }, { status: 400 });
     }
 
     const order = await Order.create({
@@ -23,7 +27,8 @@ export async function POST(request) {
       size,
       price,
       customerName,
-      customerEmail,
+      contactMethod,
+      customerContact,
       shippingAddress,
       message: message || "",
       status: "pending",
